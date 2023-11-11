@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: aquamarine;
+    border-radius: 24px 24px 0 0;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#313131;
+}
+
+.data .name{
+    font-size: 20px;
+    font-weight: 505;
+}
+
+.data .role{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card .media-btns{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.media-btns .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    text-decoration: none;
+}
+
+.card .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.buttons .button{
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons .button:hover{
+    background-color: rgb(198, 213, 239);
+}
